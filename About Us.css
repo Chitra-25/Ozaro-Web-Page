@@ -1,0 +1,86 @@
+html{
+  background: url("about-us-ozaro.png") no-repeat center center fixed;
+  background-size: 100vw 100vh;
+}
+h3{
+  text-align: center;
+}
+p{
+  font-size: 25px;
+}
+@media only screen and (max-width: 700px){
+  p{
+    font-size: 16px;
+  }
+}
+.logo {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 200px;
+  height: 100px;
+}
+@media only screen and (max-width: 700px) {
+.logo {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 100px;
+  height: 75px;
+}
+}
+.content{
+  width: 400px;
+  height: 350px;
+  position: absolute;
+  font-size: 25px;
+ margin: 22% 25% 15% 30%;
+}
+@media only screen and (max-width: 700px) {
+.content{
+ width: 200px;
+ height: 125px;
+ position: absolute;
+ font-size: 25px;
+ margin: 60% 5% 10% 25%;
+}
+}
+.side{
+  color: white;
+  position: fixed;
+  top: 3%;
+  right: 3%;
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.footer{
+  position:fixed;
+  right:0;
+  bottom:0;
+}

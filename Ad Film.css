@@ -1,0 +1,108 @@
+p{
+  text-align: justify;
+  font-size: 16px;
+}
+@media only screen and (max-width: 700px) {
+  p{
+    font-size: 10px;
+  }
+}
+html{
+  background: url("ad-film-making.png") no-repeat center center fixed;
+  background-size: 100vw 100vh;
+}
+.content{
+  width: 400px;
+  height: 350px;
+  position: absolute;
+  font-size: 25px;
+ margin: 8% 30% 25% 30%;
+}
+@media only screen and (max-width: 700px) {
+.content{
+  width: 125px;
+  height: 125px;
+  position: absolute;
+  font-size:12px;
+  margin: 30% 15% 12% 27%;
+}
+}
+.logo {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  width: 200px;
+  height: 100px;
+}
+@media only screen and (max-width: 700px) {
+.logo {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  width: 100px;
+  height: 75px;
+}
+}
+.side{
+  color: white;
+  position: fixed;
+  bottom: 3%;
+  left: 3%;
+}
+.img1{
+  position:absolute;
+  right:10%;
+  top:34%;
+}
+@media only screen and (max-width: 700px) {
+  .img1{
+    position:absolute;
+    right:1%;
+    top:20%;
+  }
+}
+.img2{
+  position:absolute;
+  right:3%;
+  bottom:20%;
+
+}
+@media only screen and (max-width: 700px) {
+  .img1{
+    position:absolute;
+    right:10%;
+    top:34%;
+  }
+}
+.img3{
+  position:absolute;
+  right:22%;
+  bottom:1%;
+}
+@media only screen and (max-width: 700px) {
+  .img1{
+    position:absolute;
+    right:10%;
+    top:34%;
+  }
+}
+.custom-list {
+   list-style: none;
+   padding-left: 0;
+}
+.custom-list li {
+   position: relative;
+   padding-left: 20px;
+}
+.custom-list li:before {
+   content: '';
+   width: 14px;
+   height: 14px;
+   position: absolute;
+   background-image: url('ad-film-bullet.png');
+   background-size: cover;
+   background-position: center;
+   left: 0;
+   top: 50%;
+   transform: translateY(-50%);
+ }

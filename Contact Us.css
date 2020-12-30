@@ -1,0 +1,14 @@
+form{
+text-align: center;
+margin:10%;
+display: fixed;
+padding:10px;
+}
+input {
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border-radius: 50px 20px;
+}
+body{
+  background:linear-gradient(#8e9eab,#eef2f3);
+}
