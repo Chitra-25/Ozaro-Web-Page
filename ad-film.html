@@ -5,9 +5,81 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="ad-film.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
+<script type="text/javascript">
+(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+    $('#nav-toggle').click(function() {
+      $('.side',).slideToggle();
+    });
+    $('#nav-toggle').click(function() {
+      $('.content',).slideToggle();
+    });
+    $('#nav-toggle').click(function() {
+      $('.img1',).slideToggle();
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+
+</script>
 <body>
-<img class="logo" src="ozaro-logo.png" alt="Icon">
+  <div id="container">
+  <section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <img class="logo" src="ozaro-logo.png" alt="Icon">
+    </div>
+    <nav>
+      <div class="nav-mobile">
+        <a id="nav-toggle" href="#!"><span></span></a>
+      </div>
+      <ul class="nav-list">
+        <!-- Setting the links to #! will ensure that no action takes place on click. -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="#!">Services</a>
+          <ul class="nav-dropdown">
+            <li><a href="ad-film.html">Ad-Film Making</a></li>
+            <li><a href="animation-and-vfx.html">Animation & Vfx</a></li>
+            <li><a href="graphic-design.html">Graphic Design</a></li>
+            <li><a href="web-development.html">Web Design & Development</a></li>
+            <li><a href="online-marketing.html">Oniline Marketing</a></li>
+          </ul>
+        </li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+<main>
+<!--<section class="half">
+  <h2>A unit of young team offering contemporary marketing and branding aids in all formats.</h2><br>
+  <button onclick="window.location.href='contact-us.html';" class="secbtn" >Get started</button>
+</section>-->
+<section class="half">
 <div class="content">
 <h3>"VISUAL MARKETING HAS ALWAYS BEEN AN ART OF STORY TELLING".</h3>
 <p >WE HAVE THE PERFECT ARTISTS FIT FOR<br>YOUR CREATIVE NEED TO DELIVER THAT ART.</p>
@@ -34,11 +106,14 @@ EXECUTION</p>
 <p><strong>POST PRODUCTION</strong><br>
   EDITING<br>
   SOUND DESIGN<br>
-  SENSOR CLEARANCE</p?
+  SENSOR CLEARANCE</p>
   </div>
 <div class="side">
   <h2>Ad Film<br>
     Making<h2>
   </div>
+</section>
+</main>
+</div>
 </body>
 </html>

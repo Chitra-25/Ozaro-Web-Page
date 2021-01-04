@@ -1,9 +1,159 @@
-html{
-  background: url("online-marketing.png") no-repeat center center fixed;
+body{
+  background: url("online-marketing.png") no-repeat center center fixed ;
   background-size: 100vw 100vh;
+  font-family: "Josefin Sans", sans-serif;
 }
+.logo{
+  position: absolute;
+  margin-top: 0;
+  margin-left:0;
+  height: 75px;
+  width:250px;
+}
+nav {
+  float: right;
+  background-color:  grey;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background: grey;
+  color: #463f3f;
+  text-decoration: none;
+
+}
+nav ul li a:hover {
+  background: #f2f2f2;
+  color: #fb5958;
+}
+nav ul li a:not(:only-child):after {
+  padding-left: 4px;
+  content: ' ▾';
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  display: none;
+}
+
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: grey;
+  height: 70px;
+  width: 70px;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-mobile {
+    display: block;
+  }
+
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #463f3f;
+  position: absolute;
+  display: block;
+  content: '';
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+@media screen and (min-width: 800px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+
+.navigation {
+  height: 75px;
+  background: grey;
+}
+
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  }
+
 .content{
-  width: 450px;
+  width: 500px;
   height: 350px;
   position: absolute;
   font-size: 25px;
@@ -11,10 +161,10 @@ html{
 }
 @media only screen and (max-width: 700px) {
   .content{
-  width: 160px;
+  width: 140px;
   height: 125px;
   position: absolute;
-  margin: 55% 30% 10% 5%;
+  margin: 45% 30% 10% 5%;
   font-size: 12px;
 }
 }
@@ -25,28 +175,21 @@ p{
   p{
     font-size: 10px;
   }
+  .side{
+
+      color: white;
+      position: fixed;
+      top: 10%;
+      left: 0%;
+
+  }
 }
-.logo {
-  position: absolute;
-  top: 2%;
-  right: 2%;
-  width: 200px;
-  height: 100px;
-}
-@media only screen and (max-width: 700px) {
-.logo {
-  position: absolute;
-  top: 2%;
-  right: 2%;
-  width: 100px;
-  height: 75px;
-}
-}
+
 .side{
   color: white;
   position: fixed;
-  top: 3%;
-  left: 3%;
+  top: 10%;
+  left: 0%;
 }
 .custom-list {
    list-style: none;

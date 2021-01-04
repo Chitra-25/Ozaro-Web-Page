@@ -7,68 +7,130 @@
 <!-- CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
+<script type="text/javascript">
+(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+    $('#nav-toggle').click(function() {
+      $('.cards',).slideToggle();
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+</script>
+
 <body>
-  <header>
-  <img class="logo" src="ozaro-logo.png" alt="Icon">
-  <div class="navbar">
-  <a href="index.html">Home</a>
-  <div class="dropdown">
-    <button class="dropbtn">Services
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="ad-film.html">Ad Film- Making</a>
-      <a href="animation-and-vfx.html">Animation & VFX</a>
-      <a href="graphic-design.html">Graphic Designs</a>
-      <a href="web-development.html">Web Design & Development</a>
-      <a href="online-marketing.html">Online Marketing</a>
+  <section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <img class="logo" src="ozaro-logo.png" alt="Icon">
     </div>
-    </div>
-    <a href="about-us.html">About Us</a>
-    <a href="contact-us.html">Contact Us</a>
+    <nav>
+      <div class="nav-mobile">
+        <a id="nav-toggle" href="#!"><span></span></a>
+      </div>
+      <ul class="nav-list">
+        <!-- Setting the links to #! will ensure that no action takes place on click. -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="#!">Services</a>
+          <ul class="nav-dropdown">
+            <li><a href="ad-film.html">Ad-Film Making</a></li>
+            <li><a href="animation-and-vfx.html">Animation & Vfx</a></li>
+            <li><a href="graphic-design.html">Graphic Design</a></li>
+            <li><a href="web-development.html">Web Design & Development</a></li>
+            <li><a href="online-marketing.html">Oniline Marketing</a></li>
+          </ul>
+        </li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</section>
+
+<div class="main">
+  <ul class="cards">
+    <li  class="cards_item">
+      <div  class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+        <div class="card_content">
+          <h2 class="card_title">Ad Film- Making</h2>
+          <p class="card_text">A unit of young team offering contemporary marketing and branding aids in all formats.</p>
+          <button onclick="window.location.href='ad-film.html';" class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+        <div class="card_content">
+          <h2 class="card_title">Animation & VFX</h2>
+          <p class="card_text">A unit of young team offering contemporary marketing and branding aids in all formats.</p>
+          <button onclick="window.location.href='animation-and-vfx.html';" class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
+        <div class="card_content">
+          <h2 class="card_title">Graphic Designs</h2>
+          <p class="card_text">A unit of young team offering contemporary marketing and branding aids in all formats.</p>
+          <button onclick="window.location.href='graphic-design.html';" class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+    <li id="card4" class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
+        <div class="card_content">
+          <h2 class="card_title">Web Design & Development</h2>
+          <p class="card_text">A unit of young team offering contemporary marketing and branding aids in all formats.</p>
+          <button onclick="window.location.href='web-development.html';" class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+    <li id="card5" class="cards_item">
+      <div class="card">
+        <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
+        <div class="card_content">
+          <h2 class="card_title">Online Marketing</h2>
+          <p class="card_text">A unit of young team offering contemporary marketing and branding aids in all formats.</p>
+          <button onclick="window.location.href='online-marketing.html';" class="btn card_btn">Read More</button>
+        </div>
+      </div>
+    </li>
+
+  </ul>
 </div>
-</header>
-<div class="row">
-  <div class="column">
-    <div class="card">
-    <button onclick="window.location.href='ad-film.html';" class="btn">Ad Film- Making</button><br><br><br>
-      <h5>Click to know about this!<h5>
-    </div>
-  </div>
-<div class="column">
-    <div class="card">
-      <button onclick="window.location.href='animation-and-vfx.html';" class="btn">Animation & VFX</button><br><br><br>
-        <h5>Click to know about this!<h5>
-    </div>
-  </div>
-  <div class="column">
-    <div class="card">
-      <button onclick="window.location.href='graphic-design.html';" class="btn">Graphic Designs</button><br><br><br>
-        <h5>Click to know about this!<h5>
-    </div>
-  </div>
-  <div class="column">
-    <div class="card">
-    <button onclick="window.location.href='web-development.html';" class="btn">Web Design & Development</button><br><br><br>
-      <h5>Click to know about this!<h5>
-    </div>
-  </div>
-  <div class="column">
-    <div class="card">
-        <button onclick="window.location.href='online-marketing.html';" class="btn">Online Marketing</button><br><br><br>
-        <h5>Click to know about this!<h5>
-    </div>
-  </div>
-</div>
-<div class="container">
-<h2>"Interested in joining hands with us?"</h2><br>
-<div>
- <button onclick="window.location.href='contact-us.html';" class="btn1">Get in touch</button>
-</div>
+<div class="section">
+  <h2>A unit of young team offering contemporary marketing and branding aids in all formats.</h2><br>
+  <button onclick="window.location.href='contact-us.html';" class="secbtn" >Get started</button>
 </div>
 <footer>
-  <!-- Footer main -->
+
   <section class="ft-main">
     <div class="ft-main-item">
       <h2 class="ft-title">Services</h2>

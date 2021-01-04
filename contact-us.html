@@ -8,17 +8,16 @@
 <link rel="stylesheet" type="text/css" href="contact-us.css">
 </head>
 <body>
-  <form>
-  <label for="name"><strong>Name</strong></label><br>
-  <input type="text" id="name" name="name"><br><br>
-  <label for="email"><strong>Email</strong></label><br>
-  <input type="text" id="email" name="email"><br><br>
-  <label for="number"><strong>Phone Number</strong></label><br>
-  <input  id="pno" name="pno"><br><br>
-  <label for="message"><strong>Message</strong></label><br>
-  <input type="text" id="message" name="message"><br><br>
-  <button type="submit"  value="Submit">Submit</button>
-</form>
-<h2><center>THANKS FOR VISITING OUR PAGE!</center></h2>
+  <div class="contact-section">
+    <h1>Contact Us</h1>
+    <div class="border"></div>
+    <form class="contact-form" action="index.html" method="post">
+      <input type="text" class="contact-form-text" placeholder="Your name">
+      <input type="email" class="contact-form-text" placeholder="Your email">
+      <input type="text" class="contact-form-text" placeholder="Your phone">
+      <textarea class="contact-form-text" placeholder="Your message"></textarea>
+      <input type="submit" class="contact-form-btn" value="Send">
+    </form>
+  </div>
 </body>
 </html>
