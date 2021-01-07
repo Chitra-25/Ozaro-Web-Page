@@ -1,16 +1,61 @@
-p{
-  text-align: justify;
+*{
+  box-sizing: border-box;
+  }
+  .image {
+   background-color: #490D40;
+   background: url("ozaro-landing-page.jpg") no-repeat center center;
+   background-size: cover;
+   height: 750px;
+   margin-top: 0px;
+
+}
+.main1 {
+   background: url("ad-film-making.png") no-repeat center center;
+   background-size: cover;
+   height: 950px;
+   text-align: justify;
+   width: 100%;
+    margin: 0 auto;
+   }
+.ommain{
+  margin: 20% 25%;
+  width: 450px;
+  height: 350px;
+  position: absolute;
   font-size: 16px;
 }
-@media only screen and (max-width: 700px) {
-  p{
-    font-size: 10px;
-  }
+.content{
+  text-align: center;
+  margin-top: 25%;
 }
-html{
-  background: url("ad-film-making.png") no-repeat center center fixed;
-  background-size: 100vw 100vh;
-  font-family: "Josefin Sans",sans-serif;
+h3{
+  font-style:oblique;
+}
+@media only screen and (max-width: 750px) {
+
+  .content{
+    text-align: center;
+    margin-top: 55%;
+  }
+  .main1 {
+    background: url("ad-film-making.png") no-repeat center center;
+    background-size: cover;
+    background-color:white;
+    height: 550px;
+    text-align: justify;
+    width: 100%;
+
+    }
+     .ommain{
+       margin: 20% 15%;
+       width: 250px;
+       height: 350px;
+       position: absolute;
+       font-size: 10px;
+     }
+     h3{
+       font-style:oblique;
+     }
 }
 
 .logo{
@@ -22,7 +67,7 @@ html{
 }
 nav {
   float: right;
-  background-color:  grey;
+  background-color:transparent;
 }
 nav ul {
   list-style: none;
@@ -37,7 +82,7 @@ nav ul li a {
   display: block;
   padding: 0 20px;
   line-height: 70px;
-  background: grey;
+  background-color:transparent;
   color: #463f3f;
   text-decoration: none;
 
@@ -45,6 +90,7 @@ nav ul li a {
 nav ul li a:hover {
   background: #f2f2f2;
   color: #fb5958;
+
 }
 nav ul li a:not(:only-child):after {
   padding-left: 4px;
@@ -68,9 +114,9 @@ nav ul li ul li a {
 .nav-mobile {
   display: none;
   position: absolute;
-  top: 0;
-  right: 0;
-  background: grey;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
   height: 70px;
   width: 70px;
 }
@@ -79,9 +125,11 @@ nav ul li ul li a {
   .nav-mobile {
     display: block;
   }
+
   nav {
     width: 100%;
     padding: 70px 0 15px;
+
   }
   nav ul {
     display: none;
@@ -92,6 +140,10 @@ nav ul li ul li a {
   nav ul li a {
     padding: 15px;
     line-height: 20px;
+    display: block;
+    background-color:grey;
+    color: #463f3f;
+    text-decoration: none;
   }
   nav ul li ul li a {
     padding-left: 30px;
@@ -145,7 +197,7 @@ nav ul li ul li a {
 
 .navigation {
   height: 75px;
-  background: grey;
+  background-color: transparent;
 }
 
 
@@ -154,72 +206,146 @@ nav ul li ul li a {
   margin: 0 auto;
 }
 
-.brand {
-  position: absolute;
-  padding-left: 20px;
-  float: left;
-  line-height: 70px;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
   }
-
-
-.content{
-  width: 400px;
-  height: 350px;
-  position: absolute;
-  font-size: 25px;
- margin: 8% 30% 25% 30%;
-}
-@media only screen and (max-width: 700px) {
-.content{
-  width: 125px;
-  height: 125px;
-  position: absolute;
-  font-size:12px;
-  margin: 8% 15% 12% 27%;
-}
+  footer {
+    background-color: #555;
+    color: #bbb;
+    line-height: 1.5;
+    width:100%;
 }
 
-.side{
-  color: white;
-  position: fixed;
-  top: 10%;
-  left: 0;
-}
+  footer a {
+    text-decoration: none;
+    color: #eee;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .ft-title {
+    color: #fff;
+    font-family: "Merriweather", serif;
+    font-size: 1.375rem;
+    padding-bottom: 0.625rem;
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: "Helvetica Neue",sans-serif;
+  }
+  .container {
+    flex: 1;
+  }
+  .ft-main {
+    padding: 1.25rem 1.875rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media only screen and (min-width: 29.8125rem /* 477px */) {
+    .ft-main {
+      justify-content: space-evenly;
+    }
+  }
+  @media only screen and (min-width: 77.5rem /* 1240px */) {
+    .ft-main {
+      justify-content: space-evenly;
+    }
+  }
+  .ft-main-item {
+    padding: 1.25rem;
+    min-width: 12.5rem;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  input[type="email"] {
+    border: 0;
+    padding: 0.625rem;
+    margin-top: 0.3125rem;
+  }
+  input[type="submit"] {
+    background-color: #00d188;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    padding: 0.625rem 0.9375rem;
+    margin-top: 0.3125rem;
+  }
+  .ft-social {
+    padding: 0 1.875rem 1.25rem;
+  }
+  .ft-social-list {
+    display: flex;
+    justify-content: center;
+    border-top: 1px #777 solid;
+    padding-top: 1.25rem;
+  }
+  .ft-social-list li {
+    margin: 0.5rem;
+    font-size: 1.25rem;
+  }
+  .ft-legal {
+    padding: 0.9375rem 1.875rem;
+    background-color: #333;
+  }
+  .ft-legal-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ft-legal-list li {
+    margin: 0.125rem 0.625rem;
+    white-space: nowrap;
+  }
+  .ft-legal-list li:nth-last-child(2) {
+      flex: 1;
+    }
 .img1{
   position:absolute;
+
   right:10%;
-  top:34%;
+  top:150%;
 }
 @media only screen and (max-width: 700px) {
   .img1{
     position:absolute;
+
     right:1%;
-    top:20%;
+    top:166%;
   }
 }
 .img2{
   position:absolute;
-  right:3%;
-  bottom:20%;
+
+  right:5%;
+  top:180%;
 
 }
 @media only screen and (max-width: 700px) {
-  .img1{
+  .img2{
     position:absolute;
-    right:10%;
-    top:34%;
+
+    left:38%;
+    top:166%;
   }
 }
 .img3{
   position:absolute;
+
   right:22%;
-  bottom:1%;
+  top:200%;
 }
 @media only screen and (max-width: 700px) {
-  .img1{
+  .img3{
     position:absolute;
-    right:1%;
-    top:34%;
+
+    left:1%;
+    top:166%;
   }
 }
 .custom-list {

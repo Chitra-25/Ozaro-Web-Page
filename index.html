@@ -5,11 +5,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!-- CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="index.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" />
+<link  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 
 </head>
 <script type="text/javascript">
@@ -34,16 +36,16 @@
     $('#nav-toggle').on('click', function() {
       this.classList.toggle('active');
     });
-    $('#nav-toggle').click(function() {
-      $('.cards',).slideToggle();
-    });
+
   }); // end DOM ready
-})(jQuery); // end jQuery
+})(jQuery);
+
 </script>
 
+
 <body>
-  <section class="navigation">
-  <div class="nav-container">
+  <section class="navigation navbar-default navbar-fixed-top">
+  <div class="nav-container ">
     <div class="brand">
       <img class="logo" src="ozaro-logo.png" alt="Icon">
     </div>
@@ -70,68 +72,72 @@
   </div>
 </section>
 
-<div class="main">
+
+<div  class="image">
+  <div class="content">
+  <h2 >A unit of young team offering contemporary marketing and branding aids in all formats.</h2><br>
+  <button class="scrollbutton" data-scroll=".main1">SCROLL UP
+  </button>
+
+</div>
+</div>
+
+
+<div class="main1">
   <ul class="cards">
     <li  class="cards_item">
       <div  class="card">
-        <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+        <div class="card_image"><img class="bgimage" src="adfilm.png" alt="adfilm" style="width:100%"></div>
         <div class="card_content">
           <h2 class="card_title">Ad Film- Making</h2>
-          <p class="card_text">A unit of young team offering contemporary marketing and branding aids in all formats.</p>
           <button onclick="window.location.href='ad-film.html';" class="btn card_btn">Read More</button>
         </div>
       </div>
     </li>
     <li class="cards_item">
       <div class="card">
-        <div class="card_image"><img src="https://picsum.photos/500/300/?image=5"></div>
+        <div class="card_image"><img class="bgimage" src="animation.png" alt="animation" style="width:100%"></div>
         <div class="card_content">
           <h2 class="card_title">Animation & VFX</h2>
-          <p class="card_text">A unit of young team offering contemporary marketing and branding aids in all formats.</p>
           <button onclick="window.location.href='animation-and-vfx.html';" class="btn card_btn">Read More</button>
         </div>
       </div>
     </li>
     <li class="cards_item">
       <div class="card">
-        <div class="card_image"><img src="https://picsum.photos/500/300/?image=11"></div>
+        <div class="card_image"><img class="bgimage" src="graphic.png" alt="graphic" style="width:100%"></div>
         <div class="card_content">
           <h2 class="card_title">Graphic Designs</h2>
-          <p class="card_text">A unit of young team offering contemporary marketing and branding aids in all formats.</p>
           <button onclick="window.location.href='graphic-design.html';" class="btn card_btn">Read More</button>
         </div>
       </div>
     </li>
     <li id="card4" class="cards_item">
       <div class="card">
-        <div class="card_image"><img src="https://picsum.photos/500/300/?image=14"></div>
+        <div class="card_image"><img class="bgimage" src="webdev.png" alt="webdev" style="width:100%"></div>
         <div class="card_content">
           <h2 class="card_title">Web Design & Development</h2>
-          <p class="card_text">A unit of young team offering contemporary marketing and branding aids in all formats.</p>
           <button onclick="window.location.href='web-development.html';" class="btn card_btn">Read More</button>
         </div>
       </div>
     </li>
     <li id="card5" class="cards_item">
       <div class="card">
-        <div class="card_image"><img src="https://picsum.photos/500/300/?image=17"></div>
+        <div class="card_image"><img  class="bgimage" src="marketing.png" alt="marketing" style="width:100%"></div>
         <div class="card_content">
           <h2 class="card_title">Online Marketing</h2>
-          <p class="card_text">A unit of young team offering contemporary marketing and branding aids in all formats.</p>
+
           <button onclick="window.location.href='online-marketing.html';" class="btn card_btn">Read More</button>
         </div>
       </div>
     </li>
 
   </ul>
-</div>
-<div class="section">
-  <h2>A unit of young team offering contemporary marketing and branding aids in all formats.</h2><br>
-  <button onclick="window.location.href='contact-us.html';" class="secbtn" >Get started</button>
+<iframe src="Ozaro-promo.mp4" height="400" width="450" title="Iframe Example"></iframe>
+
 </div>
 <footer>
-
-  <section class="ft-main">
+<section class="ft-main">
     <div class="ft-main-item">
       <h2 class="ft-title">Services</h2>
       <ul>

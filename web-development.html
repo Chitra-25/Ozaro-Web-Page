@@ -4,11 +4,13 @@
 <title>Web Design</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" type="text/css" href="web-development.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet" />
+<link  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <script type="text/javascript">
 (function($) { // Begin jQuery
@@ -32,46 +34,48 @@
     $('#nav-toggle').on('click', function() {
       this.classList.toggle('active');
     });
-    $('#nav-toggle').click(function() {
-      $('.side').slideToggle();
-    });
-    $('#nav-toggle').click(function() {
-      $('.content',).slideToggle();
-    });
+
   }); // end DOM ready
 })(jQuery); // end jQuery
 </script>
 <body>
-  <section class="navigation">
-  <div class="nav-container">
-    <div class="brand">
-      <img class="logo" src="ozaro-logo.png" alt="Icon">
-    </div>
-    <nav>
-      <div class="nav-mobile">
-        <a id="nav-toggle" href="#!"><span></span></a>
-      </div>
-      <ul class="nav-list">
-        <!-- Setting the links to #! will ensure that no action takes place on click. -->
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about-us.html">About Us</a></li>
-        <li><a href="#!">Services</a>
-          <ul class="nav-dropdown">
-            <li><a href="ad-film.html">Ad-Film Making</a></li>
-            <li><a href="animation-and-vfx.html">Animation & Vfx</a></li>
-            <li><a href="graphic-design.html">Graphic Design</a></li>
-            <li><a href="web-development.html">Web Design & Development</a></li>
-            <li><a href="online-marketing.html">Oniline Marketing</a></li>
-          </ul>
-        </li>
-        <li><a href="contact-us.html">Contact Us</a></li>
-      </ul>
-    </nav>
+  <section class="navigation navbar-default navbar-fixed-top">
+  <div class="nav-container ">
+  <div class="brand">
+    <img class="logo" src="ozaro-logo.png" alt="Icon">
   </div>
-</section>
+  <nav>
+    <div class="nav-mobile">
+      <a id="nav-toggle" href="#!"><span></span></a>
+    </div>
+    <ul class="nav-list">
+      <!-- Setting the links to #! will ensure that no action takes place on click. -->
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about-us.html">About Us</a></li>
+      <li><a href="#!">Services</a>
+        <ul class="nav-dropdown">
+          <li><a href="ad-film.html">Ad-Film Making</a></li>
+          <li><a href="animation-and-vfx.html">Animation & Vfx</a></li>
+          <li><a href="graphic-design.html">Graphic Design</a></li>
+          <li><a href="web-development.html">Web Design & Development</a></li>
+          <li><a href="online-marketing.html">Oniline Marketing</a></li>
+        </ul>
+      </li>
+      <li><a href="contact-us.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  </div>
+  </section>
+  <div  class="image">
+    <div class="content">
+    <h2 >A unit of young team offering contemporary marketing and branding aids in all formats.</h2><br>
+    <button class="scrollbutton" data-scroll=".main1">SCROLL UP
+    </button>
+  </div>
+  </div>
 
-
-<div class="content">
+  <div  class="main1">
+  <div class="ommain">
 <h3>'THE WORLD'S MARKET HAS BEEN SHRUNK DOWN TO OUR POCKET AND DESKS'</h3>
 <p>SO WE OBVIOUSLY DESIRE A GOOD QUALITY PORTAL TO ENGAGE WITH CLIENTS AND AFTER MORE THAN JUST A GOOD BUSINESS,A BETTER EXPERIENCE.</p>
 <ul class="custom-list">
@@ -80,9 +84,59 @@
 <li>AI INTEGRATION</li>
 </ul>
 </div>
-<div class="side">
-  <h2>Web Design &<br>
-     Development</h2>
-  </div>
+</div>
+
+
+  <footer>
+  <section class="ft-main">
+      <div class="ft-main-item">
+        <h2 class="ft-title">Services</h2>
+        <ul>
+          <li><a href="ad-film.html">Ad Film-Making</a></li>
+          <li><a href="animation-and-vfx.html">Animation & Vfx</a></li>
+          <li><a href="graphic-design.html">Graphic Designs</a></li>
+          <li><a href="web-development.html">Web Design & Development</a></li>
+          <li><a href="online-marketing.html">Online Marketing</a></li>
+        </ul>
+      </div>
+
+      <div class="ft-main-item">
+        <h2 class="ft-title">Ozaro</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="ft-main-item">
+        <h2 class="ft-title">Stay Updated</h2>
+        <form>
+          <input type="email" name="email" placeholder="Enter email address">
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer social -->
+    <section class="ft-social">
+      <ul class="ft-social-list">
+        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="#"><i class="fa fa-github"></i></a></li>
+        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+      </ul>
+    </section>
+
+    <!-- Footer legal -->
+    <section class="ft-legal">
+      <ul class="ft-legal-list">
+        <li><a href="#">Terms &amp; Conditions</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li>&copy; 2020 Copyright Ozaro Inc.</li>
+      </ul>
+    </section>
+  </footer>
 </body>
 </html>
