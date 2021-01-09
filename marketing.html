@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>Ozaro</title>
+      <!-- Compiled css -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.8/dist/css/uikit.min.css" />
+      <link rel="stylesheet" href="./assets/css/style.css"/>
+      <!-- UIkit JS -->
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.8/dist/js/uikit.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.8/dist/js/uikit-icons.min.js"></script>
+      <script src="/assets/js/main.js"></script>
+   </head>
+   <body>
+
+      <div class="uk-position-top" id="top">
+         <nav class="uk-navbar-container uk-navbar-transparent uk-light" data-uk-navbar="dropbar: false;"
+            data-uk-sticky="animation: uk-animation-slide-top;
+            sel-target: .uk-navbar-container;
+            cls-active: uk-navbar-sticky;
+            cls-inactive: uk-navbar-transparent uk-light; top: 0">
+            <!-- LEFT -->
+            <div class="uk-navbar-left">
+               <a class="uk-navbar-item uk-logo" href="#"><img data-src="assets/images/ozaro-logo.png" width="300" height="150" alt="" uk-img></a>
+               <!-- show ul on desktop-tablet with uk-visible@m = Only affects device widths of 960px and larger C:\Ozaro-demo\assets\images\ozaro-logo.png  -- ../images/ozaro-logo.png-->
+            </div>
+            <!-- social icons - hide on mobile -->
+            <div class="uk-navbar-right">
+               <ul class="uk-navbar-nav uk-visible@m">
+                  <li ><a href="index.html">HOME</a></li>
+                  <li>
+                     <a href="#">SERVICES</a>
+                     <div class="uk-navbar-dropdown">
+                        <ul class="uk-nav uk-navbar-dropdown-nav">
+                           <li ><a href="adfilm.html">AD FILM-MAKING</a></li>
+                           <li><a href="animation.html">ANIMATION & VFX</a></li>
+                           <li><a href="graphic.html">GRAPHIC DESIGNS</a></li>
+                           <li><a href="webdev.html">WEB DESIGN</a></li>
+                           <li class="uk-active"><a href="marketing.html">ONLINE MARKETING</a></li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li><a href="about-us.html">ABOUT US</a></li>
+                  <li><a href="contact-us.html">CONTACT US</a></li>
+               </ul>
+            </div>
+            <!--off-canvas trigger hamburger btn. show only on mobile -->
+            <a class="uk-navbar-toggle uk-hidden@m" href="#" data-uk-toggle="target: #offcanvas-nav-primary">
+            <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+            </a>
+      </div>
+      </nav>
+      </div>
+      <!-- OFF-CANVAS NAVBAR (Trigger by hamburger btn)
+         modes: push / slide / reveal /none
+         -->
+      <nav id="offcanvas-nav-primary" data-uk-offcanvas="overlay: true; mode: push; flip: true">
+         <!-- offcanvas setting  -->
+         <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+            <!-- navbar content her -->
+            <!-- A - logo -->
+            <a class="uk-align-left uk-logo" href="#"><img data-src="assets/images/ozaro-logo.png" width="200" height="150" alt="" uk-img></a>
+            <!-- B - nav -->
+            <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
+               <li><a href="index.html">HOME</a></li>
+               <li class="uk-parent">
+                  <a href="#">SERVICES</a>
+                  <ul class="uk-nav-sub">
+                     <li ><a href="adfilm.html">AD FILM-MAKING</a></li>
+                     <li><a href="animation.html">ANIMATION & VFX</a></li>
+                     <li><a href="graphic.html">GRAPHIC DESIGNS</a></li>
+                     <li><a href="webdev.html">WEB DESIGN</a></li>
+                     <li class="uk-active"><a href="marketing.html">ONLINE MARKETING</a></li>
+                  </ul>
+               </li>
+               <li class=""><a href="about-us.html">ABOUT US</a></li>
+               <li class=""><a href="contact-us.html">CONTACT US</a></li>
+            </ul>
+            <!--C- contact us -->
+         </div>
+      </nav>
+      <header id="hero-header">
+         <div class="uk-section-secondary">
+            <div class="uk-background-norepeat uk-background-cover uk-background-center-center  uk-section uk-section-large uk-flex uk-flex-middle landing-screen" uk-parallax="bgx: 0,-60" data-uk-height-viewport="offset-top: false">
+               <div class="uk-width-1-1">
+                  <!-- hero container -->
+                  <div class="uk-container uk-container-large">
+                     <h2 class="uk-margin-small uk-text-left@m uk-text-center uk-heading-large uk-text-bold landing-page-heading"
+                        data-uk-parallax="y: 0,60;opacity: 1,0; easing: 0.8;viewport: 0.95;media: @s">
+                        A unit of young team offering contemporary marketing & branding aids in all formats
+                     </h2>
+                     <!-- Arrow: With link to #main section + uk-scroll="" for smooth scrolling + offset (Beacuse the nav is sticky)-->
+                     <div class="uk-margin uk-text-left@m uk-text-center" data-uk-parallax="y: 0,450;opacity: 1,0;easing: 0.3;target: !.uk-section;media: @s">
+                        <a id="explore" class="uk-text-bold" uk-icon="icon: arrow-down;ratio: 1.5" href="#main" data-uk-scroll="offset: 100">Explore</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div
+      </header>
+      <div class="uk-background-norepeat uk-background-cover uk-background-center-center  uk-section uk-section-large uk-flex uk-flex-middle online-marketing" uk-parallax="bgx: 0,-60" data-uk-height-viewport="offset-top: false" id="main" >
+         <div class="uk-width-1-1">
+            <!-- hero container -->
+            <div class="uk-container uk-container-large marketing-container">
+
+  <h4 class="uk-heading-medium uk-text-lead">
+    'A WELL ENDOWED BUSINESS IS THE ONE THAT HAS A GREAT DIGITAL PRESENCE.'</h4>
+<p>WE HELP YOU WITH REACTING YOUR TARGET AUDIENCE AND DESIRED CONSUMES THROUGH A WELL STRUCTURED OF STARTEGIZED ONLINE MARKETING PLAN AND EXECUTE IT REPRESENTING WITH YOUR BRAND / BUSINESS's PERSONALITY.</p>
+<ul  class="uk-list uk-list-bullet custom-list marketing">
+<li id="blt1">SOCIAL MEDIA</li>
+<li id="blt2">SEARCH ENGINE OPTIMIZATION</li>
+<li id="blt3">SEARCH ENGINE MARKETING</li>
+<li id="blt4">BLOGS</li>
+<li id="blt5">CONTENT CREATIONS</li>
+</ul>
+
+</div>
+</div>
+</div>
+
+
+
+
+      <footer class="site-footer">
+         <nav class="footer__nav">
+            <div class="uk-column-1-4@l footer-cells">
+               <div class="footer-cell">
+                  <h2 class="footer-cell-heading">Ozaro</h2>
+                  <ul class="footer-list">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="about-us.html">About Us</a></li>
+                     <li><a href="contact-us.html">Contact Us</a></li>
+                  </ul>
+               </div>
+               <div class="footer-cell">
+                  <h2 class="footer-cell-heading">Services</h2>
+                  <ul class="footer-list">
+                     <li ><a href="adfilm.html">Ad Film-Making</a></li>
+                     <li><a href="animation.html">Animation & Vfx</a></li>
+                     <li><a href="graphic.html">Graphic Designs</a></li>
+                     <li><a href="webdev.html">Web Design</a></li>
+                     <li><a href="marketing.html">Online Marketing</a></li>
+                  </ul>
+               </div>
+               <div class="footer-cell">
+                  <h2 class="footer-cell-heading">Legals</h2>
+                  <ul class="footer-list">
+                     <li>Terms & Conditions</li>
+                     <li>Code of Conduct</li>
+                     <li>Goods and Services</li>
+                  </ul>
+               </div>
+               <div class="footer-cell">
+                  <h2 class="footer-cell-heading">Social Media</h2>
+                  <div class="uk-navbar-item  ">
+                     <a title="Twitter" href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+                     <a  title="Whatsapp" href="" class="uk-icon-button uk-margin-small-right" uk-icon="whatsapp"></a>
+                     <a  title="Instagram" href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+                     <a uk-tooltip="title: Facebook; pos: bottom-center" title="Facebook" href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+                     <a title="Linkedin" href="" class="uk-icon-button" uk-icon="linkedin"></a>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </footer>
+
+   </body>
+</html>
