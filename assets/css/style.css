@@ -1,5 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
 
+body {
+    overflow-x: hidden;
+}
+
+/*Scrollbar*/
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: #f9f9f9;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #D31027;;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background:  #d5bd7c;
+}
+
+@media only screen and (max-width: 990px) {
+	::-webkit-scrollbar {
+		display: none;
+	}
+}
+
+
 
 h1, h2, h3, h4, p, a {
   font-family: 'IBM Plex Sans', sans-serif;
@@ -15,6 +49,47 @@ section li{
   font-weight: bold;
 }
 
+.uk-light .uk-navbar-nav>li>a {
+    color: black;
+    font-family: 'IBM Plex Sans';
+    font-weight: 600;
+}
+
+.uk-navbar-right {
+    margin-right: 2rem;
+}
+
+.uk-navbar-nav li {
+   margin-left: 2rem;
+ }
+
+ .uk-navbar-dropdown-nav li {
+   margin-left: 0rem;
+ }
+
+.uk-light .uk-navbar-nav>li:hover>a {
+  color: #D31027 !important;
+}
+
+ .uk-navbar-dropdown-nav>li>a {
+    color: black;
+    font-weight: 600;
+ }
+
+  .uk-navbar-dropdown-nav>li>a:hover {
+     color: #D31027;
+     font-weight: 900;
+  }
+
+.uk-navbar-toggle-icon svg {
+  width: 30px;
+  fill: #D31027;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.33));
+}
+
 /*
  * Landing Screen
  */
@@ -24,45 +99,32 @@ section li{
  }
 
  .uk-light .uk-navbar-nav>li.uk-active>a {
-   color: #d5bd7c;
+   color: #D31027;
    font-weight: bolder;
  }
 
+ .uk-light .uk-navbar-nav>li>a:hover {
+   color: #D31027;
+ }
+ .uk-navbar-nav>li.uk-active>a {
+   color: #D31027;
+   font-weight: bolder;
+}
+
+
+
  .landing-screen {
-
-   background-image: url("../images/ozaro-landing-page.jpg");
- }
- .adfilm {
-   color: black !important;
-   background-image: url("../images/ad-film-making.png");
- }
- .online-marketing {
-   color: black !important;
-   background-image: url("../images/online-marketing.png");
- }
- .animation-and-vfx {
-   color: black !important;
-   background-image: url("../images/animation-and-vfx.png");
- }
- .graphic-and-designs {
-   color: black !important;
-   background-image: url("../images/graphic-design.png");
- }
- .web-development {
-   color: black !important;
-   background-image: url("../images/web-development.png");
- }
- .about-us {
-   color: black !important;
-   background-image: url("../images/about-us-ozaro.png");
+   background-image: url("../images/ozaro-background.jpg");
  }
 
-/*(../images/ozaro-landing-page.jpg)*/
  .landing-page-heading {
+   width: 35rem;
+   text-align: center !important;
+   padding-top: 40px;
    color: black !important;
-       font-size: 2.5em;
+       font-size: 2em;
        text-transform: capitalize;
-       width: 23rem;
+
        position: relative;
        float: right;
        font-family: 'IBM Plex Sans';
@@ -72,164 +134,26 @@ section li{
        background: #f9f9f987;
        filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
  }
- .webdev-container{
+ @media only screen and (max-width: 990px) {
+   .landing-page-heading {
+     width: 18rem;
+     text-align: center !important;
+     padding-top: 40px;
    color: black !important;
-
+       font-size: 1em;
        text-transform: capitalize;
-       width: 23rem;
+
        position: relative;
-
+       float: right;
        font-family: 'IBM Plex Sans';
-
+       border: 4px solid #d5bd7c;
        padding: 15px;
-       margin-right:25%;
-       background: transparent;
-
- }
- @media only screen and (max-width: 990px) {
-   .webdev-container{
-     color: black !important;
-    text-transform: capitalize;
-         width: 18rem;
-         position: relative;
-        font-family: 'IBM Plex Sans';
-        padding: 15px;
-         margin-top:20%;
-         margin-right:0%;
-         background: transparent;
-   }
- }
- .animation-container{
-   color: black !important;
-   text-transform: capitalize;
-   width: 23rem;
-   position: relative;
-   font-family: 'IBM Plex Sans';
-    padding: 15px;
-  margin-right:20%;
-  background: transparent;
-
- }
- @media only screen and (max-width: 990px) {
-   .animation-container{
-     color: black !important;
-    text-transform: capitalize;
-         width: 18rem;
-         position: relative;
-        font-family: 'IBM Plex Sans';
-        padding: 15px;
-         margin-top:27%;
-         margin-right:0%;
-         background: transparent;
-   }
- }
- .graphic-container{
-   color: black !important;
-   text-transform: capitalize;
-   width: 23rem;
-   position: relative;
-   font-family: 'IBM Plex Sans';
-    padding: 15px;
-  margin-left:13%;
-  background: transparent;
-
- }
- @media only screen and (max-width: 990px) {
- .graphic-container{
-   color: black !important;
-   text-transform: capitalize;
-   width: 18rem;
-   position: relative;
-   font-family: 'IBM Plex Sans';
-    padding: 15px;
-    margin-top: 40%;
-  margin-left:1%;
-  background: transparent;
-
+margin: auto;
+       background: #f9f9f987;
+       filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
  }
 }
-.marketing-container{
-  color: black !important;
-  text-transform: capitalize;
-  width: 23rem;
-  position: relative;
-  font-family: 'IBM Plex Sans';
-   padding: 15px;
-   margin-top: 15%;
- margin-left:13%;
- background: transparent;
-
-}
-@media only screen and (max-width: 990px) {
-.marketing-container{
-  color: black !important;
-  text-transform: capitalize;
-  width: 18rem;
-  position: relative;
-  font-family: 'IBM Plex Sans';
-   padding: 15px;
-   margin-top: 40%;
- margin-left:1%;
- background: transparent;
-
-}
-}
-.adfilm-container{
-  color: black !important;
-  text-transform: capitalize;
-  width: 23rem;
-  position: relative;
-  font-family: 'IBM Plex Sans';
-   padding: 15px;
-
-  margin-left:33%;
-  background: transparent;
-}
-@media only screen and (max-width: 990px) {
-.adfilm-container{
-  color: black !important;
-  text-transform: capitalize;
-  width: 18rem;
-  position: relative;
-  font-family: 'IBM Plex Sans';
-   padding: 15px;
-
- margin-left:7%;
- background: transparent;
-}
-}
-.aboutus-container{
-  color: black !important;
-  text-transform: capitalize;
-  width: 40rem;
-  position: relative;
-  font-family: 'IBM Plex Sans';
-   padding: 15px;
-margin-top: 20%;
-  margin-left:23%;
-  background: transparent;
-
-}
-@media only screen and (max-width: 990px) {
-.aboutus-container{
-  color: black !important;
-  text-transform: capitalize;
-  width: 20rem;
-  position: relative;
-  font-family: 'IBM Plex Sans';
-   padding: 15px;
-margin-top: 18%;
-  margin-left:3%;
-  background: transparent;
-
-}
-}
- #explore{
-   color: black !important;
-   font-size: 2.5em;
- }
-
-         .btn-grad {background-image: linear-gradient(to right, #D31027 0%, #EA384D  51%, #D31027  100%)}
+       .btn-grad {background-image: linear-gradient(to right, #D31027 0%, #EA384D  51%, #D31027  100%)}
          .btn-grad {
             margin: 10px;
             padding: 15px 45px;
@@ -391,10 +315,6 @@ margin-top: 18%;
    top: 50%;
    transform: translateY(-50%);
  }
-
-
-
-
 .footer-cell {
 	float: left;
     line-height: 25px;
@@ -483,7 +403,7 @@ margin-top: 18%;
 .border{
   width: 100px;
   height: 10px;
-  background: #34495e;
+  background: #d5bd7c;
   margin: 40px auto;
 }
 
@@ -516,7 +436,7 @@ textarea.contact-form-text{
 .contact-form-btn{
   float: right;
   border: 0;
-  background: #34495e;
+  background: #d5bd7c;
   color: #fff;
   padding: 12px 50px;
   border-radius: 20px;
@@ -525,4 +445,62 @@ textarea.contact-form-text{
 }
 .contact-form-btn:hover{
   background: #2980b9;
+}
+
+.footer-list li a {
+  color: white;
+}
+
+.image-holder-right img {
+  width: 800px;
+}
+
+.section-container {
+    padding: 10px;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+#explore-btn-container {
+  margin: 2rem auto;
+  margin-left: 35%;
+}
+@media only screen and (max-width:768px){
+  #explore-btn-container {
+
+    margin: 2rem auto;
+    margin-left: 22%;
+  }
+}
+
+#explore-btn-container #explore {
+    color: white !important;
+    padding: 16px;
+    font-size: 20px;
+}
+
+#explore-btn-container .btn-grad {
+    width: fit-content;
+}
+#about-us{
+  font-size: 56px;
+  font-weight: bolder;
+}
+
+@media only screen and (max-width:768px) {
+  .section-container {
+    display: grid;
+  }
+  #about-us{
+    font-size: 26px;
+    font-weight: bolder;
+  }
+
+  .marketing-container ul {
+    margin-bottom: 2rem !important;
+  }
+
 }
