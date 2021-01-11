@@ -110,10 +110,26 @@ section li{
    color: #D31027;
    font-weight: bolder;
 }
+.uk-offcanvas-bar {
+  background: #d5bd7c !important;
+}
+ .uk-nav-default>li>a{
+
+  color:black !important;
+    font-weight: bolder;
+}
+.uk-nav-sub>li>a{
+
+ color:black !important;
+   font-weight: bolder;
+}
+.uk-nav-default>li.uk-active>a {
+  color: #D31027;
+  font-weight: bolder;
+}
 
 
-
- .landing-screen {
+.landing-screen {
    background-image: url("../images/ozaro-background.jpg");
  }
 
@@ -121,14 +137,12 @@ section li{
    width: 35rem;
    text-align: center !important;
    padding-top: 40px;
-   color: black !important;
+ color: black !important;
        font-size: 2em;
-       text-transform: capitalize;
-
        position: relative;
        float: right;
        font-family: 'IBM Plex Sans';
-       border: 4px solid #d5bd7c;
+       border: 2px solid #d5bd7c;
        padding: 15px;
        margin: auto;
        background: #f9f9f987;
@@ -136,22 +150,26 @@ section li{
  }
  @media only screen and (max-width: 990px) {
    .landing-page-heading {
-     width: 18rem;
+     width: 16rem;
+     height:10rem;
      text-align: center !important;
      padding-top: 40px;
    color: black !important;
        font-size: 1em;
-       text-transform: capitalize;
-
-       position: relative;
-       float: right;
-       font-family: 'IBM Plex Sans';
-       border: 4px solid #d5bd7c;
+       position:relative;
+font-family: 'IBM Plex Sans';
+       border: 2px solid #d5bd7c;
        padding: 15px;
-margin: auto;
+      margin:auto;
        background: #f9f9f987;
        filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
  }
+}
+@media only screen and (max-width: 990px) {
+#box{
+  margin-left: 0;
+  margin-right: 0;
+}
 }
        .btn-grad {background-image: linear-gradient(to right, #D31027 0%, #EA384D  51%, #D31027  100%)}
          .btn-grad {
@@ -323,7 +341,7 @@ margin: auto;
 
 .site-footer {
 	background-color: #302c2a;
-	padding-bottom: 120px;
+	padding-bottom: 20px;
     padding-top: 90px;
 }
 
@@ -503,4 +521,13 @@ h1 {
     margin-bottom: 2rem !important;
   }
 
+}
+@media only screen and (min-width:768px) {
+#card4, #card5 {
+    position: relative;
+    box-sizing: border-box;
+    transition: box-shadow .1s ease-in-out;
+    width: 400px;
+    margin-left: 42%;
+}
 }
