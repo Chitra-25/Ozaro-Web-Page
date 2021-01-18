@@ -19,12 +19,12 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #D31027;;
+	background: #302c2a;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-	background:  #d5bd7c;
+	background:  #272422;
 }
 
 @media only screen and (max-width: 990px) {
@@ -90,6 +90,8 @@ section li{
     filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.33));
 }
 
+
+
 /*
  * Landing Screen
  */
@@ -107,7 +109,7 @@ section li{
    color: #D31027;
  }
  .uk-navbar-nav>li.uk-active>a {
-   color: #D31027;
+   color: #D31027 !important;
    font-weight: bolder;
 }
 .uk-offcanvas-bar {
@@ -128,6 +130,15 @@ section li{
   font-weight: bolder;
 }
 
+.uk-navbar-container:not(.uk-navbar-transparent) .uk-navbar-nav>li>a {
+    font-family: 'IBM Plex Sans';
+	color:black;
+    font-weight: 600;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) ..uk-navbar-nav>li.uk-active>a {
+      color: #D31027;
+}
 
 .landing-screen {
    background-image: url("../images/ozaro-background.jpg");
@@ -150,20 +161,28 @@ section li{
  }
  @media only screen and (max-width: 990px) {
    .landing-page-heading {
-     width: 16rem;
+     width: auto;
      height:10rem;
      text-align: center !important;
      padding-top: 40px;
    color: black !important;
-       font-size: 1em;
+       font-size: 1.5em;
        position:relative;
 font-family: 'IBM Plex Sans';
        border: 2px solid #d5bd7c;
-       padding: 15px;
+       padding: 30px 30px 60px 38px;
       margin:auto;
        background: #f9f9f987;
        filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
+	       float: none;
  }
+
+  #explore-btn-container #explore {
+    color: white !important;
+    padding: 12px !important;
+    font-size: 14px !important;
+}
+
 }
 @media only screen and (max-width: 990px) {
 #box{
@@ -341,8 +360,17 @@ font-family: 'IBM Plex Sans';
 
 .site-footer {
 	background-color: #302c2a;
-	padding-bottom: 20px;
     padding-top: 90px;
+}
+
+.footer-legal {
+    text-align: center;
+    color: white;
+    background: #272422;
+    height: 36px;
+    font-size: 14px;
+    line-height: 25px;
+    padding-top: 12px;
 }
 
 .footer-cells {
