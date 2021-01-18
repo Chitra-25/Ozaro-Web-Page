@@ -45,7 +45,7 @@ h1, h2, h3, h4, p, a {
   font-weight: bolder;
 }
 section li{
-  color: #d5bd7c !important;
+  color: #302c2a !important;
   font-weight: bold;
 }
 
@@ -95,6 +95,12 @@ section li{
 /*
  * Landing Screen
  */
+ 
+ .uk-nav-parent-icon>.uk-parent>a::after {
+	background-color: black;
+    border-radius: 60%;
+ }
+ 
 
  .uk-light .uk-navbar-nav>li>a {
    color: black;
@@ -113,7 +119,7 @@ section li{
    font-weight: bolder;
 }
 .uk-offcanvas-bar {
-  background: #d5bd7c !important;
+  background: #d5bd7c  !important;
 }
  .uk-nav-default>li>a{
 
@@ -153,11 +159,12 @@ section li{
        position: relative;
        float: right;
        font-family: 'IBM Plex Sans';
-       border: 2px solid #d5bd7c;
+       border: 2px solid #302c2a;
        padding: 15px;
        margin: auto;
        background: #f9f9f987;
        filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
+	   margin-top: 15rem !important;
  }
  @media only screen and (max-width: 990px) {
    .landing-page-heading {
@@ -169,7 +176,7 @@ section li{
        font-size: 1.5em;
        position:relative;
 font-family: 'IBM Plex Sans';
-       border: 2px solid #d5bd7c;
+       border: 2px solid #302c2a;
        padding: 30px 30px 60px 38px;
       margin:auto;
        background: #f9f9f987;
@@ -190,7 +197,7 @@ font-family: 'IBM Plex Sans';
   margin-right: 0;
 }
 }
-       .btn-grad {background-image: linear-gradient(to right, #D31027 0%, #EA384D  51%, #D31027  100%)}
+       .btn-grad {background-image: linear-gradient(to right, #282828 0%, #8b8b8b 51%, #525252 100%);}
          .btn-grad {
             margin: 10px;
             padding: 15px 45px;
@@ -367,10 +374,10 @@ font-family: 'IBM Plex Sans';
     text-align: center;
     color: white;
     background: #272422;
-    height: 36px;
+    height: 4rem;
     font-size: 14px;
     line-height: 25px;
-    padding-top: 12px;
+    padding-top: 25px;
 }
 
 .footer-cells {
@@ -449,7 +456,7 @@ font-family: 'IBM Plex Sans';
 .border{
   width: 100px;
   height: 10px;
-  background: #d5bd7c;
+  background: #302c2a;
   margin: 40px auto;
 }
 
@@ -482,7 +489,7 @@ textarea.contact-form-text{
 .contact-form-btn{
   float: right;
   border: 0;
-  background: #d5bd7c;
+  background: #302c2a;
   color: #fff;
   padding: 12px 50px;
   border-radius: 20px;
@@ -558,4 +565,52 @@ h1 {
     width: 400px;
     margin-left: 42%;
 }
+}
+
+.caveman-container {
+	width: 80%;
+}
+
+
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+#cave {
+	filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
+}
+
+#cld1 {
+	box-sizing: border-box;
+	filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
+    animation: float 6s ease-in-out infinite;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+	.landing-page-heading {
+		margin-top: 10rem !important;
+	}
+	.caveman-container {
+		max-width: none;
+		width: 30rem;
+		position: absolute !important;
+	}
+	
+	.footer-legal span a{
+		display: block;
+	}
 }
