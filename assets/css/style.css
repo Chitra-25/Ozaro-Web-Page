@@ -92,6 +92,8 @@ section li{
 
 
 
+
+
 /*
  * Landing Screen
  */
@@ -142,9 +144,15 @@ section li{
     font-weight: 600;
 }
 
-.uk-navbar-container:not(.uk-navbar-transparent) ..uk-navbar-nav>li.uk-active>a {
+.uk-navbar-container:not(.uk-navbar-transparent) .uk-navbar-nav>li.uk-active>a {
       color: #D31027;
 }
+
+.uk-navbar-container:not(.uk-navbar-transparent)  .uk-navbar-nav>li:hover>a {
+  color: #D31027 !important;
+}
+
+
 
 .landing-screen {
    background-image: url("../images/ozaro-background.jpg");
