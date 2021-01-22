@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
 
-body {
+body,html {
     overflow-x: hidden;
 }
 
@@ -97,12 +97,12 @@ section li{
 /*
  * Landing Screen
  */
- 
+
  .uk-nav-parent-icon>.uk-parent>a::after {
 	background-color: black;
     border-radius: 60%;
  }
- 
+
 
  .uk-light .uk-navbar-nav>li>a {
    color: black;
@@ -367,6 +367,24 @@ font-family: 'IBM Plex Sans';
    top: 50%;
    transform: translateY(-50%);
  }
+ .music li {
+   font-size: 20px;
+   font-weight: bolder;
+position: relative;
+padding-left: 20px;
+}
+.music li:before {
+content: '';
+width: 14px;
+height: 14px;
+position: absolute;
+background-image: url('../images/music-bullet.png');
+background-size: cover;
+background-position: center;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
+}
 .footer-cell {
 	float: left;
     line-height: 25px;
@@ -565,16 +583,6 @@ h1 {
   }
 
 }
-@media only screen and (min-width:768px) {
-#card4, #card5 {
-    position: relative;
-    box-sizing: border-box;
-    transition: box-shadow .1s ease-in-out;
-    width: 400px;
-    margin-left: 42%;
-}
-}
-
 .caveman-container {
 	width: 80%;
 }
@@ -617,7 +625,7 @@ h1 {
 		width: 30rem;
 		position: absolute !important;
 	}
-	
+
 	.footer-legal span a{
 		display: block;
 	}
