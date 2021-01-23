@@ -27,14 +27,14 @@
       cls-inactive: uk-navbar-transparent uk-light; top: 0">
       <!-- LEFT -->
       <div class="uk-navbar-left">
-         <a class="uk-navbar-item uk-logo" href="/index"><img data-src="assets/images/ozaro-logo.png" width="150" height="100" alt="" uk-img></a>
+         <a class="uk-navbar-item uk-logo" href="/"><img data-src="assets/images/ozaro-logo.png" width="150" height="100" alt="" uk-img></a>
          <!-- show ul on desktop-tablet with uk-visible@m = Only affects device widths of 960px and larger-->
 
       </div>
       <!-- social icons - hide on mobile -->
       <div class="uk-navbar-right">
         <ul class="uk-navbar-nav uk-visible@m">
-           <li ><a href="/index">HOME</a></li>
+           <li ><a href="/">HOME</a></li>
            <li>
               <a href="#">SERVICES</a>
               <div class="uk-navbar-dropdown">
@@ -44,6 +44,8 @@
                     <li><a href="/graphic">GRAPHIC DESIGNS</a></li>
                     <li><a href="/web-development">WEB DESIGN</a></li>
                     <li><a href="/marketing">ONLINE MARKETING</a></li>
+                    <li><a href="/music-production">MUSIC PRODUCTION</a></li>
+
                  </ul>
               </div>
            </li>
@@ -66,10 +68,10 @@
    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
       <!-- navbar content her -->
       <!-- A - logo -->
-      <a class="uk-align-center uk-logo" href="/index"><img data-src="assets/images/ozaro-logo.png" width="150" height="100" alt="" uk-img></a>
+      <a class="uk-align-center uk-logo" href="/"><img data-src="assets/images/ozaro-logo.png" width="150" height="100" alt="" uk-img></a>
       <!-- B - nav -->
       <ul class="uk-nav-default uk-nav-parent-icon" uk-nav>
-         <li ><a href="/index">HOME</a></li>
+         <li ><a href="/">HOME</a></li>
          <li class="uk-parent">
             <a href="#">SERVICES</a>
             <ul class="uk-nav-sub">
@@ -78,6 +80,8 @@
               <li><a href="/graphic">GRAPHIC DESIGNS</a></li>
               <li><a href="/web-development">WEB DESIGN</a></li>
               <li><a href="/marketing">ONLINE MARKETING</a></li>
+              <li><a href="/music-production">MUSIC PRODUCTION</a></li>
+
             </ul>
          </li>
          <li class=""><a href="/about-us">ABOUT US</a></li>
@@ -91,7 +95,7 @@
          <div class="uk-section-secondary">
             <div class="uk-background-norepeat uk-background-cover uk-background-center-center  uk-section uk-section-large landing-screen" uk-parallax="bgx: 0,-60" data-uk-height-viewport="offset-top: false">
 			 <div class="uk-column-1-2@l">
-				
+
 				<div>
 					<div class="uk-position-bottom-left caveman-container">
 						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
@@ -107,7 +111,7 @@
 						</svg>
 					</div>
 				</div>
-				
+
 				<div class="uk-width-1-1 uk-position-right">
                   <!-- hero container -->
 					  <div class="uk-container uk-container-large " id="box">
@@ -120,7 +124,7 @@
 						 </h2>
 					  </div>
                 </div>
-				
+
 			  </div>
             </div>
          </div>
@@ -131,12 +135,12 @@
   <div class="contact-section">
     <h1>Contact Us</h1>
     <div class="border"></div>
-    <form class="contact-form" action="/index" method="post">
-      <input type="text" class="contact-form-text" placeholder="Your name">
-      <input type="email" class="contact-form-text" placeholder="Your email">
-      <input type="text" class="contact-form-text" placeholder="Your phone">
-      <textarea class="contact-form-text" placeholder="Your message"></textarea>
-      <input type="submit" class="contact-form-btn" value="Send">
+    <form class="contact-form" name="form" action="mail_handler.php" method="post">
+      <input type="text"  name="name" class="contact-form-text" placeholder="Your name">
+      <input type="email" name="email" class="contact-form-text" placeholder="Your email">
+      <input type="text" name="phone" class="contact-form-text" placeholder="Your phone">
+      <textarea class="contact-form-text" name="msg"  placeholder="Your message"></textarea>
+      <input type="submit" name="submit" class="contact-form-btn" value="Send">
     </form>
   </div>
 </div>
@@ -147,7 +151,7 @@
       <div class="footer-cell">
         <h2 class="footer-cell-heading">Ozaro</h2>
         <ul class="footer-list">
-          <li><a href="/index">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="/about-us">About Us</a></li>
 
           <li><a href="/contact-us">Contact Us</a></li>
@@ -161,34 +165,31 @@
           <li><a href="/graphic">Graphic Designs</a></li>
           <li><a href="/web-development">Web Designs</a></li>
           <li><a href="/marketing">Online Marketing</a></li>
+          <li><a href="/music-production">Music Production</a></li>
+
         </ul>
       </div>
       <div class="footer-cell">
         <h2 class="footer-cell-heading">Locate Us</h2>
         <ul class="footer-list">
           <li>
-            <h3 class="footer-sub-heading-2">Address</h3>
-            <p>Box 564, Disneyland<br>
-            USA</p>
-          </li>
-          <li>
             <h3 class="footer-sub-heading-2">Mail us</h3>
-            <a class="footer-contact-btn" href="mailto:info@ozaro.com"><span uk-icon="mail"></span> info@ozaro.com</a>
+            <a class="footer-contact-btn" href="mailto:ozaromediatech@gmail.com"><span uk-icon="mail"></span> ozaromediatech@gmail.com </a>
           </li>
           <li>
             <h3 class="footer-sub-heading-2">Call us</h3>
-            <a class="footer-contact-btn" href="tel:90876543212"><span uk-icon="receiver"></span> +91 1234567890</a>
+            <a class="footer-contact-btn" href="tel:+91 7904274056"><span uk-icon="receiver"></span> +91 7904274056</a>
           </li>
         </ul>
       </div>
       <div class="footer-cell">
         <h2 class="footer-cell-heading">Social Media</h2>
           <div class="uk-navbar-item  ">
-             <a title="Twitter" href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
-             <a  title="Whatsapp" href="" class="uk-icon-button uk-margin-small-right" uk-icon="whatsapp"></a>
-             <a  title="Instagram" href="" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
-             <a uk-tooltip="title: Facebook; pos: bottom-center" title="Facebook" href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
-             <a title="Linkedin" href="" class="uk-icon-button" uk-icon="linkedin"></a>
+             <a title="Twitter" href="https://twitter.com/Ozaro16" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+             <a  title="Youtube" href="https://www.youtube.com/channel/UCtwjhYsLJZtOcyFI25qKZFg" class="uk-icon-button uk-margin-small-right" uk-icon="youtube"></a>
+             <a  title="Instagram" href="http://instagram.com/ozaro_mediatech" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+             <a uk-tooltip="title: Facebook; pos: bottom-center" title="Facebook" href="https://www.facebook.com/ozaromediatech" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+             <a title="Linkedin" href="https://www.linkedin.com/company/ozaro-mediatech" class="uk-icon-button" uk-icon="linkedin"></a>
           </div>
       </div>
     </div>

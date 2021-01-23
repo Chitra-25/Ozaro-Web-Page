@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
 
-body {
+body,html {
     overflow-x: hidden;
 }
 
@@ -32,9 +32,6 @@ body {
 		display: none;
 	}
 }
-
-
-
 h1, h2, h3, h4, p, a {
   font-family: 'IBM Plex Sans', sans-serif;
 }
@@ -89,20 +86,15 @@ section li{
 .uk-navbar-container:not(.uk-navbar-transparent) {
     filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.33));
 }
-
-
-
-
-
 /*
  * Landing Screen
  */
- 
+
  .uk-nav-parent-icon>.uk-parent>a::after {
 	background-color: black;
     border-radius: 60%;
  }
- 
+
 
  .uk-light .uk-navbar-nav>li>a {
    color: black;
@@ -151,8 +143,6 @@ section li{
 .uk-navbar-container:not(.uk-navbar-transparent)  .uk-navbar-nav>li:hover>a {
   color: #D31027 !important;
 }
-
-
 
 .landing-screen {
    background-image: url("../images/ozaro-background.jpg");
@@ -252,7 +242,7 @@ font-family: 'IBM Plex Sans';
               position: relative;
               padding-left: 20px;
            }
-           .animation li:before {
+    .animation li:before {
     content: '';
     width: 14px;
     height: 14px;
@@ -309,7 +299,7 @@ font-family: 'IBM Plex Sans';
     background-size: cover;
     background-position: center;
     left: 0;
-       top: 50%;
+    top: 50%;
     transform: translateY(-50%);
   }
   .marketing #blt3:before {
@@ -321,7 +311,7 @@ font-family: 'IBM Plex Sans';
      background-size: cover;
      background-position: center;
      left: 0;
-        top: 50%;
+     top: 50%;
      transform: translateY(-50%);
    }
    .marketing #blt4:before {
@@ -367,6 +357,24 @@ font-family: 'IBM Plex Sans';
    top: 50%;
    transform: translateY(-50%);
  }
+ .music li {
+   font-size: 20px;
+   font-weight: bolder;
+position: relative;
+padding-left: 20px;
+}
+.music li:before {
+content: '';
+width: 14px;
+height: 14px;
+position: absolute;
+background-image: url('../images/music-bullet.png');
+background-size: cover;
+background-position: center;
+left: 0;
+top: 50%;
+transform: translateY(-50%);
+}
 .footer-cell {
 	float: left;
     line-height: 25px;
@@ -565,16 +573,6 @@ h1 {
   }
 
 }
-@media only screen and (min-width:768px) {
-#card4, #card5 {
-    position: relative;
-    box-sizing: border-box;
-    transition: box-shadow .1s ease-in-out;
-    width: 400px;
-    margin-left: 42%;
-}
-}
-
 .caveman-container {
 	width: 80%;
 }
@@ -617,7 +615,7 @@ h1 {
 		width: 30rem;
 		position: absolute !important;
 	}
-	
+
 	.footer-legal span a{
 		display: block;
 	}
