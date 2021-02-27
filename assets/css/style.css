@@ -179,11 +179,7 @@ iframe{
 .mapcontent{
   font-size: 35px;
 }
-@media only screen and (max-width:768px) {
-  .section-container {
-    display: grid;
-  }
-}
+
 .image-holder-right img {
         width: 500px;
   }
