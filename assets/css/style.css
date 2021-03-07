@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 body,html {
     overflow-x: hidden;
+	font-family: 'Ubuntu', sans-serif;
 }
+
+body {
+	background-image: url(../images/white-waves.png);
+}
+
+
 /*Scrollbar*/
 /* width */
 ::-webkit-scrollbar {
-	width: 5px;
+	width: 6px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
@@ -13,7 +21,8 @@ body,html {
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background: #302c2a;
+    background: #af1415;
+    border-radius: 10px;
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
@@ -97,9 +106,7 @@ font-size: 20px;
    color: #D31027 !important;
    font-weight: bolder;
 }
-.uk-offcanvas-bar {
-  background: #ffffff  !important;
-}
+
  .uk-nav-default>li>a{
 color:black !important;
     font-weight: bolder;
@@ -125,18 +132,19 @@ color:black !important;
   color: #D31027 !important;
 }
 
- .border{
-  width: 500px;
-  height: 5px;
-  background: #FF0000;
-  margin: 40px auto;
+.border {
+    width: 500px;
+    height: 5px;
+    background: #af1415;
+    margin: 0px auto;
+    margin-bottom: 5rem;
+	    border-radius: 20px;
 }
+
+
 @media only screen and (max-width: 768px) {
   .border{
   width: 250px;
-  height: 5px;
-  background: #FF0000;
-  margin: 40px auto;
 }
 }
 .topmargin {
@@ -146,7 +154,7 @@ color:black !important;
  .footer-legal {
     text-align: center;
     color: white;
-    background: #272422;
+    background: #af1415;
     height: 4rem;
     font-size: 14px;
     line-height: 25px;
@@ -162,14 +170,14 @@ color:black !important;
 .mapouter{
   position:relative;
   text-align:right;
-  height:500px
-  width:700px;
+
   }
   .gmap_canvas {
     overflow:hidden;
     background:none!important;
-    height:500px;
-    width:700px;
+
+    box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+    border-radius: 20px;
   }
 @media only screen and (max-width: 768px) {
 iframe{
@@ -181,9 +189,15 @@ iframe{
     width:auto;
 }
 }
-.image-holder-right img {
-        width: 500px;
 
+.image-holder-right {
+	text-align: center;
+	padding:20px;
+	margin-bottom: 2rem;
+}
+
+.image-holder-right img {
+        width: 50%;
   }
 .image-holder-whatwedo img{
       width: 800px;
@@ -213,6 +227,149 @@ h1 {
   }
 
 
-.section-one{
-background: linear-gradient(to top, #ffffff 0%, #f26d40 85%);
+.section-one {
+    background: unset;
 }
+
+.uk-section-muted {
+	background-image: url(../images/white-waves.png);
+}
+
+.uk-card-default {
+    border-radius: 20px;
+}
+
+.uk-card-default .uk-card-header {
+    border-bottom: 1px solid #e5e5e5;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.uk-badge {
+    background: #af1213;
+    margin-right: 1rem;
+    box-shadow: 0px 0px 0px rgb(0 0 0 / 33%);
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 4.2em;
+    color: black !important;
+}
+
+#opd-service {
+	margin-left: 4rem;
+}
+
+.uk-navbar-container:not(.uk-navbar-transparent) {
+    background: #ffffff;
+}
+
+.our-partners {
+	background: white;
+    padding: 50px;
+    margin: 40px;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 8%);
+    border-radius: 20px;
+}
+
+.uk-slider-items>* {
+    padding: 32px;
+}
+
+.footer-legal a {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+
+#where-we-are {
+	margin-left:2rem;
+}
+
+#where-we-are a {
+    color: #af1314;
+    font-size: 18px;
+}
+
+.uk-description-list>dt {
+    color: #010101;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.uk-card-title {
+    color: #000000 !important;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.uk-nav-default .uk-nav-parent-icon .uk-nav li {
+	margin-top: 3rem;
+}
+
+.uk-offcanvas-bar {
+    background: #9c100f !Important
+}
+
+
+.uk-offcanvas-bar .uk-nav-default>li>a{
+	color: white !Important;
+    font-size: 24px;
+	font-weight: 300;
+}
+
+.uk-offcanvas-bar ul{
+    margin-top: 4rem;
+    line-height: 50px;
+    padding: 20px;
+}
+
+.uk-offcanvas-bar .uk-nav-default>li.uk-active>a{
+	color: #fff !important;
+	font-weight: 500;
+}
+
+
+@media only screen and (max-width:768px) {
+h1 {
+    font-size: 3.2em;
+}	
+.image-holder-right img {
+    width: 100%;
+}
+
+.our-partners {
+    padding: unset;
+    margin: 15px;
+}
+
+#services {
+	display: block !important;
+}
+
+#address {
+	display: block !important;
+}
+
+#where-we-are {
+    margin-left: -3rem;
+}
+
+#opd-service {
+    margin-left: 0rem;
+    margin-top: 3rem;
+}
+
+.footer-legal {
+    height: fit-content;
+	padding-bottom: 2rem;
+}
+
+#where-we-are {
+    margin-top: 3rem;
+}
+	
+}
+  
